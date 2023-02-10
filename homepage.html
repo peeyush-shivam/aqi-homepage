@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav-bar">
+                <div class="img-search-container">
+                    <div class="img-container">
+                        <img src="assets/aqi-logo.svg" alt="aqi-logo" width="80" height="38.58">
+                    </div>
+                    <div class="search-box-container">
+                        <form>
+                            <button class="search-button">
+                              <i class="fa fa-search"></i>
+                            </button>
+                            <input type="text" placeholder="Seach Location City or Area">
+                            <button class="location-button">
+                                <img src="assets/gps.svg" alt="gps" height="10px">
+                            </button>
+                          </form>
+                    </div>
+                </div>
+                <div class="nav-links-container">
+                    <div>
+                        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                    </div>
+                    <div>
+                        <a href="#">Home</a> 
+                    </div>
+                    <div>
+                        <a href="#">Dashboard</a> 
+                    </div>
+                    <div>
+                        <a href="#">Ranking</a> 
+                    </div>
+                    <div>
+                        <a href="#">Monitors</a> 
+                    </div>
+                    <div>
+                        <a href="#">Login/Register</a> 
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="delhi-stats"></div>
+        <div class="hero-image">
+        <p class="hero-city">New Delhi, Delhi, India</p>
+        <p class="data">Real-time Air Quality Index (AQI)</p>
+        <p class="last-updated">Last updated : 2mins. ago</p>
+        <p class="dist">1.8 km</p>
+        <img src="./assets/Distance from monitor to your location 1.svg" alt="dist" class="dist-img">
+        <button class="locate-me">
+            <img src="./assets/Frame.svg" alt="locate">
+            <p>Locate Me</p>
+        </button>
+        <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart green">
+              <path class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="48, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="percentage">48</p>
+        <p class="index">AQI</p>
+        <p class="rating">Good</p>
+        <p class="description">The air is fresh and free from toxins
+        </p>
+        <img src="/assets/good new 1.svg" alt="character" class="character">
+        <div class="weather-conditions">
+            <div>
+                <img src="./assets/therm.svg" alt="thermo">
+                <p>28 &deg;C</p>
+            </div>
+            <div>
+                <img src="./assets/Asset 2 1.svg" alt="">
+                <p>54%</p>
+            </div>
+            <div>
+                <img src="./assets/cloud.svg" alt="">
+                <p>Cloudy</p>
+            </div>
+            <div>
+                <img src="./assets/windspeed.svg" alt="">
+                <p>6.1 km/h</p>
+            </div>
+            <div style="border: none;">
+                <img src="./assets/ref.svg" alt="">
+                <p>08</p>
+            </div>
+        </div>
+        <p class="pollutants">Major pollutants in <span>New Delhi</span> </p>
+            <div class="pollutant-container">
+                <div>
+                    <p class="pm">PM<sub>2.5</sub></p>
+                    <p class="conc-desc">(Paricles < 2.5μm)</p>
+                    <p class="conc">20</p>
+                    <p class="unit">ug/m<sup>3</sup> </p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/pm2.5 icon.svg" alt="pm25" class="pm-25">
+                </div>
+                <div>
+                    <p class="pm">PM<sub>10</sub></p>
+                    <p class="conc-desc">(Paricles < 10μm)</p>
+                    <p class="conc">73</p>
+                    <p class="unit">ug/m<sup>3</sup> </p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/pm2.5 icon.svg" alt="pm25" class="pm-25">
+                </div>
+                <div>
+                    <p class="pm">O<sub>3</sub></p>
+                    <p class="conc-desc">(Ozone)</p>
+                    <p class="conc">01</p>
+                    <p class="unit">ppb</p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/o3 icon.svg" alt="pm25" class="pm-25">
+                </div>
+                <div>
+                    <p class="pm">NO<sub>2</sub></p>
+                    <p class="conc-desc">(Nitrogen Dioxide)</p>
+                    <p class="conc">08</p>
+                    <p class="unit">ppb</p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/NO2.svg" alt="pm25" class="pm-25">
+                </div>
+                <div>
+                    <p class="pm">CO</p>
+                    <p class="conc-desc" style="width: 77px">(Carbon Monoxide)</p>
+                    <p class="conc">953</p>
+                    <p class="unit" style="padding-left: 10px;">ppm</p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/co icon.svg" alt="pm25" class="pm-25">
+                </div>
+                <div>
+                    <p class="pm">SO<sub>2</sub></p>
+                    <p class="conc-desc">(Sulphur Dioxide)</p>
+                    <p class="conc">01</p>
+                    <p class="unit">ppb</p>
+                    <img src="./assets/Ellipse 50.svg" alt="particles" class="particle-container">
+                    <img src="./assets/sO2.svg" alt="pm25" class="pm-25">
+                </div>
+            </div>
+            <p class="weather">Weather Forecast for <span>New Delhi</span> </p>
+            <div class="weather-container">
+                <div>
+                    <p class="day-1">Mon</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Tue</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Wed</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Thu</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Fri</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Sat</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="day-1">Sun</p>
+                    <img src="./assets/cloud.svg" alt="cloud">
+                    <div class="temp-humidity">
+                        <p class="temp">28 &deg;C</p>
+                        <p class="humidity">65%</p>
+                    </div>
+                    <div class="airquality">
+                        <p class="num">352</p>
+                        <p class="location">(AQI-IN)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="other-cities">    
+                <div class="city-container">
+                    <p class="city">New Delhi</p>
+                    <div class="img-aqi">
+                        <img src="./assets/Delhi.svg" alt="delhi">
+                        <div class="city-aqi">
+                            <p class="aqi-scale">365</p>
+                            <p class="aqi-location">AQI-IN</p>
+                            <div class="warning">
+                                <p>Severe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-container">
+                    <p class="city">New Delhi</p>
+                    <div class="img-aqi">
+                        <img src="./assets/Delhi.svg" alt="delhi">
+                        <div class="city-aqi">
+                            <p class="aqi-scale">365</p>
+                            <p class="aqi-location">AQI-IN</p>
+                            <div class="warning">
+                                <p>Severe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-container">
+                    <p class="city">New Delhi</p>
+                    <div class="img-aqi">
+                        <img src="./assets/Delhi.svg" alt="delhi">
+                        <div class="city-aqi">
+                            <p class="aqi-scale">365</p>
+                            <p class="aqi-location">AQI-IN</p>
+                            <div class="warning">
+                                <p>Severe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-container">
+                    <p class="city">New Delhi</p>
+                    <div class="img-aqi">
+                        <img src="./assets/Delhi.svg" alt="delhi">
+                        <div class="city-aqi">
+                            <p class="aqi-scale">365</p>
+                            <p class="aqi-location">AQI-IN</p>
+                            <div class="warning">
+                                <p>Severe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-container">
+                    <p class="city">New Delhi</p>
+                    <div class="img-aqi">
+                        <img src="./assets/Delhi.svg" alt="delhi">
+                        <div class="city-aqi">
+                            <p class="aqi-scale">365</p>
+                            <p class="aqi-location">AQI-IN</p>
+                            <div class="warning">
+                                <p>Severe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <img src="./assets/city graph.svg" alt="" class="city-graph">
+                <div class="health-advice">
+                    <div class="info">
+                        <div class="heading"> <p>Health Advice</p> </div>
+                        <div class="protect">How to protect yourself from air pollution around New Delhi ?
+                        </div>
+                        <div class="not-required">
+                            <div class="card">
+                                <div class="air-pur-img">
+                                    <img src="./assets/Ellipse 5.svg" alt="ellipse-5">
+                                    <img src="./assets/ap.svg" alt="air-purifier" class="air-pur"> 
+                                </div>
+                                <div class="ap">Air Purifier</div>
+                                <div class="nr">Not required</div>
+                            </div>
+                            <div class="card">
+                                <div class="air-pur-img">
+                                    <img src="./assets/Ellipse 5.svg" alt="ellipse-5">
+                                    <img src="./assets/ap.svg" alt="air-purifier" class="air-pur"> 
+                                </div>
+                                <div class="ap">Air Purifier</div>
+                                <div class="nr">Not required</div>
+                            </div><div class="card">
+                                <div class="air-pur-img">
+                                    <img src="./assets/Ellipse 5.svg" alt="ellipse-5">
+                                    <img src="./assets/ap.svg" alt="air-purifier" class="air-pur"> 
+                                </div>
+                                <div class="ap">Air Purifier</div>
+                                <div class="nr">Not required</div>
+                            </div><div class="card">
+                                <div class="air-pur-img">
+                                    <img src="./assets/Ellipse 5.svg" alt="ellipse-5">
+                                    <img src="./assets/ap.svg" alt="air-purifier" class="air-pur"> 
+                                </div>
+                                <div class="ap">Air Purifier</div>
+                                <div class="nr">Not required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cycle-conatiner">
+                        <img src="./assets/cycle.svg" alt="decoration" class="decoration ">
+                        <img src="./assets/boy.svg" alt="cycle-image" class="cycle-image">
+                    </div>
+                </div>
+                <div class="city-ranking">
+                    <div class="real-time">World’s Most Polluted Countries Live Air Quality Ranking</div>
+                    <div class="world-ranking">Air Quality Index depicts the extent of air pollution at a particular location. These are world rankings of cities and countries with the worst air quality in real-time. Find out whether your location is among the most polluted.</div>
+                    <div class="city-country">
+                        <div class="city-r"> <p>City Rankings</p> </div>
+                        <div class="country-r"> <p>Country Rankings</p> </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="fl-table">
+                            <thead>
+                            <tr>
+                                <div class="table-head">
+                                    <th>Rank</th>
+                                    <th>Major Cities</th>
+                                    <th>AQI</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </div>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>                            <tr>
+                                <td>10</td>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td> <div class="warning table" style="background: #18B411;
+                                    ;">48</div></td>
+                                <td style="color: #18B411;">Good</td>
+                                <td><img src="./assets/emoji.svg" alt="emoji"></td>
+                            </tr>
+                            <tbody>
+                        </table>
+                    </div>
+                </div>                <div class="metro-cities">
+                    <div class="label"> <p>Metro Cities of India</p> </div>
+                    <div class="real-time">Real-time Air Quality Index (AQI)</div>
+                    <div class="explore">Explore the real-time air quality - PM2.5, PM10, CO, Ozone, SO2 & NO2 data from AQI ambient air quality monitors</div>
+                    <div class="last-updated-aqi">Last Updated : 19th Sep’22 ; 5:54pm</div>
+                    <div class="options">
+                        <div>Real-time</div>
+                        <div>24 Hours</div>
+                        <div>7days</div>
+                        <div>Month</div>
+                    </div>
+                    <div class="table-container">
+                        <table class="fl-table">
+                            <thead>
+                            <tr>
+                                <div class="table-head">
+                                    <th>BIG CITIES</th>
+                                    <th>AQI</th>
+                                    <th>PM2.5</th>
+                                    <th>PM10</th>
+                                    <th>OZONE</th>
+                                    <th>CO</th>
+                                    <th>SO2</th>
+                                    <th>NO2</th>
+                                </div>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="td-city"><img src="./assets/Delhi.svg" alt="del" class="td-city-img"><p class="td-city-name">New Delhi</p></div></td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                                <td>16</td>
+                                <td>48</td>
+                                <td>16</td>
+                            </tr>
+                            <tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <img src="./assets/aqi scale.svg" alt="aqi-scale" class="aqi-scales"> 
+    </main>
+    <footer>
+        <img src="./assets/www.aqi 1.svg" alt="footer" class="footer">
+
+    </footer>
+</body>
+</html>
